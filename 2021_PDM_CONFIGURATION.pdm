@@ -321,58 +321,6 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="11">
-    <Polarity ID="Polarity" Value="0"/>
-    <ChannelReference ID="Input" Value="PDM.Constants.True"/>
-    <Condition ID="Output">
-     <ChannelReference ID="Output" Value="ECU"/>
-     <ConditionArray ID="Array"/>
-     <Operator ID="Operator" Value="9"/>
-     <Text ID="Comment"/>
-    </Condition>
-    <ChannelReference ID="Active" Value="ECU.Status.Active"/>
-    <ChannelReference ID="Current" Value="ECU.Current"/>
-    <ChannelReference ID="Voltage" Value="ECU.Voltage"/>
-    <ChannelReference ID="Load" Value="ECU.Load"/>
-    <ChannelReference ID="Status" Value="ECU.Status"/>
-    <ChannelReference ID="OverCurrent" Value="ECU.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="ECU.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="ECU.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="8.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
-    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
-    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="AlwaysRetry" Value="0"/>
-    <Text ID="Comment"/>
-    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="MasterShutdown" Value="0"/>
-    <Bool ID="StayAlive" Value="0"/>
-   </OutputPin>
-   <OutputPin PinIndex="12">
-    <Polarity ID="Polarity" Value="0"/>
-    <ChannelReference ID="Input" Value="WATER_PUMP_COND"/>
-    <Condition ID="Output">
-     <ChannelReference ID="Output" Value="WATER_PUMP"/>
-     <ConditionArray ID="Array"/>
-     <Operator ID="Operator" Value="9"/>
-     <Text ID="Comment"/>
-    </Condition>
-    <ChannelReference ID="Active" Value="WATER_PUMP.Status.Active"/>
-    <ChannelReference ID="Current" Value="WATER_PUMP.Current"/>
-    <ChannelReference ID="Voltage" Value="WATER_PUMP.Voltage"/>
-    <ChannelReference ID="Load" Value="WATER_PUMP.Load"/>
-    <ChannelReference ID="Status" Value="WATER_PUMP.Status"/>
-    <ChannelReference ID="OverCurrent" Value="WATER_PUMP.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="WATER_PUMP.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="WATER_PUMP.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="7.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
-    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
-    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="AlwaysRetry" Value="0"/>
-    <Text ID="Comment"/>
-    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="MasterShutdown" Value="0"/>
-    <Bool ID="StayAlive" Value="0"/>
-   </OutputPin>
    <OutputPin PinIndex="1">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="FAN_COND"/>
@@ -503,7 +451,59 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="13">
+   <OutputPin PinIndex="6">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value="PDM.Constants.True"/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="ECU"/>
+     <ConditionArray ID="Array"/>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="ECU.Status.Active"/>
+    <ChannelReference ID="Current" Value="ECU.Current"/>
+    <ChannelReference ID="Voltage" Value="ECU.Voltage"/>
+    <ChannelReference ID="Load" Value="ECU.Load"/>
+    <ChannelReference ID="Status" Value="ECU.Status"/>
+    <ChannelReference ID="OverCurrent" Value="ECU.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="ECU.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="ECU.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="1.00000000000000000e+01" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+   <OutputPin PinIndex="11">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value="WATER_PUMP_COND"/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="WATER_PUMP"/>
+     <ConditionArray ID="Array"/>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="WATER_PUMP.Status.Active"/>
+    <ChannelReference ID="Current" Value="WATER_PUMP.Current"/>
+    <ChannelReference ID="Voltage" Value="WATER_PUMP.Voltage"/>
+    <ChannelReference ID="Load" Value="WATER_PUMP.Load"/>
+    <ChannelReference ID="Status" Value="WATER_PUMP.Status"/>
+    <ChannelReference ID="OverCurrent" Value="WATER_PUMP.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="WATER_PUMP.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="WATER_PUMP.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="7.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+   <OutputPin PinIndex="12">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="ENGINE_RUNNING"/>
     <Condition ID="Output">
@@ -529,24 +529,24 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="14">
+   <OutputPin PinIndex="13">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="PDM.Constants.True"/>
     <Condition ID="Output">
-     <ChannelReference ID="Output" Value="DISPLAY"/>
+     <ChannelReference ID="Output" Value="CAN"/>
      <ConditionArray ID="Array"/>
      <Operator ID="Operator" Value="9"/>
      <Text ID="Comment"/>
     </Condition>
-    <ChannelReference ID="Active" Value="DISPLAY.Status.Active"/>
-    <ChannelReference ID="Current" Value="DISPLAY.Current"/>
-    <ChannelReference ID="Voltage" Value="DISPLAY.Voltage"/>
-    <ChannelReference ID="Load" Value="DISPLAY.Load"/>
-    <ChannelReference ID="Status" Value="DISPLAY.Status"/>
-    <ChannelReference ID="OverCurrent" Value="DISPLAY.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="DISPLAY.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="DISPLAY.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="2.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <ChannelReference ID="Active" Value="CAN.Status.Active"/>
+    <ChannelReference ID="Current" Value="CAN.Current"/>
+    <ChannelReference ID="Voltage" Value="CAN.Voltage"/>
+    <ChannelReference ID="Load" Value="CAN.Load"/>
+    <ChannelReference ID="Status" Value="CAN.Status"/>
+    <ChannelReference ID="OverCurrent" Value="CAN.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="CAN.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="CAN.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="5.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
     <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
     <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
     <Bool ID="AlwaysRetry" Value="0"/>
