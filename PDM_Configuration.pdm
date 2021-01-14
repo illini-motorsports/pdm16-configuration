@@ -1384,6 +1384,6 @@
  <PDMType ID="PDMType" Value="2"/>
  <Text ID="Comment"/>
  <Text ID="ConfigName">
-<![CDATA[2021_PDM_CONFIGURATION]]>
+<![CDATA[PDM_Configuration]]>
  </Text>
 </Container>
