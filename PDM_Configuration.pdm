@@ -214,48 +214,22 @@
   <OutputPinsArray ID="Array">
    <OutputPin PinIndex="0">
     <Polarity ID="Polarity" Value="0"/>
-    <ChannelReference ID="Input" Value="PDM.Constants.True"/>
+    <ChannelReference ID="Input" Value="WATER_PUMP_COND"/>
     <Condition ID="Output">
-     <ChannelReference ID="Output" Value="IGN"/>
+     <ChannelReference ID="Output" Value="WATER_PUMP"/>
      <ConditionArray ID="Array"/>
      <Operator ID="Operator" Value="9"/>
      <Text ID="Comment"/>
     </Condition>
-    <ChannelReference ID="Active" Value="IGN.Status.Active"/>
-    <ChannelReference ID="Current" Value="IGN.Current"/>
-    <ChannelReference ID="Voltage" Value="IGN.Voltage"/>
-    <ChannelReference ID="Load" Value="IGN.Load"/>
-    <ChannelReference ID="Status" Value="IGN.Status"/>
-    <ChannelReference ID="OverCurrent" Value="IGN.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="IGN.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="IGN.Status.Retries Done"/>
+    <ChannelReference ID="Active" Value="WATER_PUMP.Status.Active"/>
+    <ChannelReference ID="Current" Value="WATER_PUMP.Current"/>
+    <ChannelReference ID="Voltage" Value="WATER_PUMP.Voltage"/>
+    <ChannelReference ID="Load" Value="WATER_PUMP.Load"/>
+    <ChannelReference ID="Status" Value="WATER_PUMP.Status"/>
+    <ChannelReference ID="OverCurrent" Value="WATER_PUMP.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="WATER_PUMP.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="WATER_PUMP.Status.Retries Done"/>
     <SteppedValue ID="MaxCurrent" Value="1.00000000000000000e+01" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
-    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
-    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="AlwaysRetry" Value="0"/>
-    <Text ID="Comment"/>
-    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="MasterShutdown" Value="1"/>
-    <Bool ID="StayAlive" Value="0"/>
-   </OutputPin>
-   <OutputPin PinIndex="1">
-    <Polarity ID="Polarity" Value="0"/>
-    <ChannelReference ID="Input" Value="FAN_COND"/>
-    <Condition ID="Output">
-     <ChannelReference ID="Output" Value="FAN"/>
-     <ConditionArray ID="Array"/>
-     <Operator ID="Operator" Value="9"/>
-     <Text ID="Comment"/>
-    </Condition>
-    <ChannelReference ID="Active" Value="FAN.Status.Active"/>
-    <ChannelReference ID="Current" Value="FAN.Current"/>
-    <ChannelReference ID="Voltage" Value="FAN.Voltage"/>
-    <ChannelReference ID="Load" Value="FAN.Load"/>
-    <ChannelReference ID="Status" Value="FAN.Status"/>
-    <ChannelReference ID="OverCurrent" Value="FAN.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="FAN.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="FAN.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="1.30000000000000000e+01" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
     <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
     <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
     <Bool ID="AlwaysRetry" Value="0"/>
@@ -264,7 +238,7 @@
     <Bool ID="MasterShutdown" Value="0"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="2">
+   <OutputPin PinIndex="1">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="UPSHIFT"/>
     <Condition ID="Output">
@@ -290,7 +264,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="3">
+   <OutputPin PinIndex="2">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="UPSHIFT"/>
     <Condition ID="Output">
@@ -316,7 +290,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="4">
+   <OutputPin PinIndex="3">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="DOWNSHIFT"/>
     <Condition ID="Output">
@@ -342,7 +316,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="5">
+   <OutputPin PinIndex="4">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="DOWNSHIFT"/>
     <Condition ID="Output">
@@ -368,7 +342,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="6">
+   <OutputPin PinIndex="5">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="PDM.Constants.True"/>
     <Condition ID="Output">
@@ -394,24 +368,24 @@
     <Bool ID="MasterShutdown" Value="0"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="8">
+   <OutputPin PinIndex="6">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="PDM.Constants.True"/>
     <Condition ID="Output">
-     <ChannelReference ID="Output" Value="INJ"/>
+     <ChannelReference ID="Output" Value="IGN"/>
      <ConditionArray ID="Array"/>
      <Operator ID="Operator" Value="9"/>
      <Text ID="Comment"/>
     </Condition>
-    <ChannelReference ID="Active" Value="INJ.Status.Active"/>
-    <ChannelReference ID="Current" Value="INJ.Current"/>
-    <ChannelReference ID="Voltage" Value="INJ.Voltage"/>
-    <ChannelReference ID="Load" Value="INJ.Load"/>
-    <ChannelReference ID="Status" Value="INJ.Status"/>
-    <ChannelReference ID="OverCurrent" Value="INJ.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="INJ.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="INJ.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="3.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <ChannelReference ID="Active" Value="IGN.Status.Active"/>
+    <ChannelReference ID="Current" Value="IGN.Current"/>
+    <ChannelReference ID="Voltage" Value="IGN.Voltage"/>
+    <ChannelReference ID="Load" Value="IGN.Load"/>
+    <ChannelReference ID="Status" Value="IGN.Status"/>
+    <ChannelReference ID="OverCurrent" Value="IGN.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="IGN.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="IGN.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="1.00000000000000000e+01" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
     <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
     <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
     <Bool ID="AlwaysRetry" Value="0"/>
@@ -420,7 +394,33 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="9">
+   <OutputPin PinIndex="7">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value="FAN_COND"/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="FAN"/>
+     <ConditionArray ID="Array"/>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="FAN.Status.Active"/>
+    <ChannelReference ID="Current" Value="FAN.Current"/>
+    <ChannelReference ID="Voltage" Value="FAN.Voltage"/>
+    <ChannelReference ID="Load" Value="FAN.Load"/>
+    <ChannelReference ID="Status" Value="FAN.Status"/>
+    <ChannelReference ID="OverCurrent" Value="FAN.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="FAN.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="FAN.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="1.00000000000000000e+01" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+   <OutputPin PinIndex="8">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="ENG_CRANK_COND"/>
     <Condition ID="Output">
@@ -446,7 +446,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="10">
+   <OutputPin PinIndex="9">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value=""/>
     <Condition ID="Output">
@@ -527,33 +527,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="7">
-    <Polarity ID="Polarity" Value="0"/>
-    <ChannelReference ID="Input" Value="WATER_PUMP_COND"/>
-    <Condition ID="Output">
-     <ChannelReference ID="Output" Value="WATER_PUMP"/>
-     <ConditionArray ID="Array"/>
-     <Operator ID="Operator" Value="9"/>
-     <Text ID="Comment"/>
-    </Condition>
-    <ChannelReference ID="Active" Value="WATER_PUMP.Status.Active"/>
-    <ChannelReference ID="Current" Value="WATER_PUMP.Current"/>
-    <ChannelReference ID="Voltage" Value="WATER_PUMP.Voltage"/>
-    <ChannelReference ID="Load" Value="WATER_PUMP.Load"/>
-    <ChannelReference ID="Status" Value="WATER_PUMP.Status"/>
-    <ChannelReference ID="OverCurrent" Value="WATER_PUMP.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="WATER_PUMP.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="WATER_PUMP.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="1.50000000000000000e+01" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
-    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
-    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="AlwaysRetry" Value="0"/>
-    <Text ID="Comment"/>
-    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="MasterShutdown" Value="0"/>
-    <Bool ID="StayAlive" Value="0"/>
-   </OutputPin>
-   <OutputPin PinIndex="11">
+   <OutputPin PinIndex="10">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="ENGINE_RUNNING"/>
     <Condition ID="Output">
@@ -579,7 +553,7 @@
     <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="12">
+   <OutputPin PinIndex="11">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="PDM.Constants.True"/>
     <Condition ID="Output">
@@ -603,6 +577,86 @@
     <Text ID="Comment"/>
     <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
     <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+   <OutputPin PinIndex="12">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value=""/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="T15"/>
+     <ConditionArray ID="Array">
+      <OperationGroup>
+       <OperationGroupArray ID="Array">
+        <Operation>
+         <ChannelReference ID="Output" Value=""/>
+         <ChannelReference ID="LeftInput" Value="PRIME"/>
+         <Operator ID="Operator" Value="0"/>
+         <ChannelReference ID="RightInput" Value=""/>
+         <SteppedValue ID="Constant" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant2" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant3" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant4" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="TimeOn" Value="0.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <SteppedValue ID="TimeOff" Value="0.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <Polarity ID="Polarity" Value="0"/>
+         <Bool ID="InvertOutput" Value="0"/>
+         <Edge ID="Edge" Value="0"/>
+         <Edge ID="Edge2" Value="0"/>
+         <Bool ID="ByteSwap" Value="0"/>
+         <SteppedValue ID="DivideMask" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <ChannelReference ID="Override" Value=""/>
+         <ChannelReference ID="Override2" Value=""/>
+         <Bool ID="WrapAround" Value="1"/>
+         <Bool ID="WrapAround2" Value="1"/>
+        </Operation>
+       </OperationGroupArray>
+       <Operator ID="Operator" Value="8"/>
+      </OperationGroup>
+     </ConditionArray>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="T15.Status.Active"/>
+    <ChannelReference ID="Current" Value="T15.Current"/>
+    <ChannelReference ID="Voltage" Value="T15.Voltage"/>
+    <ChannelReference ID="Load" Value="T15.Load"/>
+    <ChannelReference ID="Status" Value="T15.Status"/>
+    <ChannelReference ID="OverCurrent" Value="T15.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="T15.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="T15.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="2.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+   <OutputPin PinIndex="20">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value="PDM.Constants.True"/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="INJ"/>
+     <ConditionArray ID="Array"/>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="INJ.Status.Active"/>
+    <ChannelReference ID="Current" Value="INJ.Current"/>
+    <ChannelReference ID="Voltage" Value="INJ.Voltage"/>
+    <ChannelReference ID="Load" Value="INJ.Load"/>
+    <ChannelReference ID="Status" Value="INJ.Status"/>
+    <ChannelReference ID="OverCurrent" Value="INJ.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="INJ.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="INJ.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="5.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="1"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
   </OutputPinsArray>
