@@ -239,7 +239,7 @@
      <Operator ID="Operator" Value="14"/>
      <ChannelReference ID="RightInput" Value=""/>
      <SteppedValue ID="Constant" Value="2.96791349999999987e+00" StepSize="1.97860900000000006e-01" Units="V" ReservedBits="0" DecimalPlaces="1"/>
-     <SteppedValue ID="Constant2" Value="1.97860900000000006e+00" StepSize="1.97860900000000006e-01" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant2" Value="2.57219170000000030e+00" StepSize="1.97860900000000006e-01" Units="V" ReservedBits="0" DecimalPlaces="1"/>
      <SteppedValue ID="Constant3" Value="0.00000000000000000e+00" StepSize="1.97860900000000006e-01" Units="V" ReservedBits="0" DecimalPlaces="1"/>
      <SteppedValue ID="Constant4" Value="0.00000000000000000e+00" StepSize="1.97860900000000006e-01" Units="V" ReservedBits="0" DecimalPlaces="1"/>
      <SteppedValue ID="TimeOn" Value="1.00000000000000006e-01" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
