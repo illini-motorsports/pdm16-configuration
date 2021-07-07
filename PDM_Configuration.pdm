@@ -1467,6 +1467,33 @@
       </OperationGroupArray>
       <Operator ID="Operator" Value="8"/>
      </OperationGroup>
+     <OperationGroup>
+      <OperationGroupArray ID="Array">
+       <Operation>
+        <ChannelReference ID="Output" Value=""/>
+        <ChannelReference ID="LeftInput" Value="B_err_thrpot_b"/>
+        <Operator ID="Operator" Value="12"/>
+        <ChannelReference ID="RightInput" Value="PDM.Constants.False"/>
+        <SteppedValue ID="Constant" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Constant2" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Constant3" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Constant4" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="TimeOn" Value="1.00000000000000006e-01" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="TimeOff" Value="1.00000000000000006e-01" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <Polarity ID="Polarity" Value="0"/>
+        <Bool ID="InvertOutput" Value="0"/>
+        <Edge ID="Edge" Value="0"/>
+        <Edge ID="Edge2" Value="0"/>
+        <Bool ID="ByteSwap" Value="0"/>
+        <SteppedValue ID="DivideMask" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <ChannelReference ID="Override" Value=""/>
+        <ChannelReference ID="Override2" Value=""/>
+        <Bool ID="WrapAround" Value="1"/>
+        <Bool ID="WrapAround2" Value="1"/>
+       </Operation>
+      </OperationGroupArray>
+      <Operator ID="Operator" Value="8"/>
+     </OperationGroup>
     </ConditionArray>
     <Operator ID="Operator" Value="9"/>
     <Text ID="Comment"/>
@@ -1666,6 +1693,38 @@
     </Operation>
     <Bool ID="Timeout" Value="1"/>
     <SteppedValue ID="TimeoutValue" Value="2.50000000000000000e+01" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+   </CANInput>
+   <CANInput>
+    <ChannelReference ID="Output" Value="B_err_thrpot_b"/>
+    <SteppedValue ID="MessageIndex" Value="2.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="Offset" Value="6.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <DataSize ID="DataSize" Value="0"/>
+    <ByteOrder ID="ByteOrder" Value="0"/>
+    <SteppedValue ID="Mask" Value="2.55000000000000000e+02" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Operation ID="Operation">
+     <ChannelReference ID="Output" Value=""/>
+     <ChannelReference ID="LeftInput" Value=""/>
+     <Operator ID="Operator" Value="17"/>
+     <ChannelReference ID="RightInput" Value=""/>
+     <SteppedValue ID="Constant" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Constant2" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Constant3" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Constant4" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="TimeOn" Value="0.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <SteppedValue ID="TimeOff" Value="0.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <Polarity ID="Polarity" Value="0"/>
+     <Bool ID="InvertOutput" Value="0"/>
+     <Edge ID="Edge" Value="0"/>
+     <Edge ID="Edge2" Value="0"/>
+     <Bool ID="ByteSwap" Value="0"/>
+     <SteppedValue ID="DivideMask" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <ChannelReference ID="Override" Value=""/>
+     <ChannelReference ID="Override2" Value=""/>
+     <Bool ID="WrapAround" Value="1"/>
+     <Bool ID="WrapAround2" Value="1"/>
+    </Operation>
+    <Bool ID="Timeout" Value="1"/>
+    <SteppedValue ID="TimeoutValue" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
    </CANInput>
   </CANInputsArray>
   <CANId ID="Message 0 Id">
